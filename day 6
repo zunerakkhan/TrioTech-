@@ -1,0 +1,57 @@
+import React from "react";
+
+function ProfileCard() {
+  return (
+    <div style={styles.card}>
+      <img
+        src="https://via.placeholder.com/120"
+        alt="Profile"
+        style={styles.image}
+      />
+      <h2 style={styles.name}>Ayesha Khan</h2>
+      <p style={styles.bio}>
+        Frontend Developer | React Enthusiast | Loves Coding & Design
+      </p>
+      <button style={styles.button}>Follow</button>
+    </div>
+  );
+}
+
+const styles = {
+  card: {
+    width: "280px",
+    padding: "20px",
+    borderRadius: "15px",
+    boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
+    textAlign: "center",
+    fontFamily: "Arial, sans-serif",
+    backgroundColor: "#fff",
+    margin: "20px auto",
+  },
+  image: {
+    width: "120px",
+    height: "120px",
+    borderRadius: "50%",
+    marginBottom: "15px",
+  },
+  name: {
+    fontSize: "1.5rem",
+    margin: "10px 0",
+    color: "#333",
+  },
+  bio: {
+    fontSize: "0.9rem",
+    color: "#666",
+    marginBottom: "15px",
+  },
+  button: {
+    padding: "10px 20px",
+    backgroundColor: "#4CAF50",
+    color: "white",
+    border: "none",
+    borderRadius: "25px",
+    cursor: "pointer",
+  },
+};
+
+export default ProfileCard;
